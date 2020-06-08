@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python期末作業-2</title>
+        <style>
+            *{
+            font-family: "微軟正黑體";
+            }
+            .jumbotron{
+                height: initial;
+            }
+        </style>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--C108156102 智慧商務一甲 Python期末作業-->
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    </head>
+    <body class="bg-dark">
+        
+        <head>
+            <div class="navbar navbar-dark bg-primary shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <h3><i class="fas fa-circle-notch fa-spin"></i> 蔬菜水果一周走勢圖</h3>
+                    </a>
+                </div>
+            </div>
+        </head>
+        <main role="main">
+            <div class="jumbotron">
+                <div class="col-sm-8 mx-auto  mb-4">
+                    <h4 class="font-weight-bold">請選擇想檢視的蔬菜水果：</h4>
+                    
+                    <div class="input-group">
+                        <select id="select" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <!--<option selected>Choose...</option>-->  
+                        </select>
+                        <div class="input-group-append">
+                            <button id="button" class="btn btn-outline-primary" type="button">　查詢　</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr class="w-75">
+                <div class="row justify-content-around">
+                    <div class="col-sm-10 col-lg-5 col-md-11 shadow bg-light rounded mb-4">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="col-sm-10 col-lg-5 col-md-11 shadow bg-light rounded mb-4">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-10 col-md-11 shadow bg-light rounded">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr class="bg-primary text-light">
+                                    <th scope="col">#</th>
+                                    <th scope="col">平均價格</th>
+                                    <th scope="col">交易量</th>
+                                    <th scope="col">相較前天價格</th>
+                                    <th scope="col">相較前天交易</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer mt-auto">
+            <div class="container">
+                <span class="text-muted">
+                    <p class="float-right">
+                        <a href="#" class="color-light text-light">回到頂部</a>
+                    </p>
+                    Python期末報告-C108156102 邱暉祐
+                </span>
+            </div>
+        </footer>
+
+        <div class="toast" role="alert" data-delay="7000" style="position:fixed;z-index: 2;bottom: 30px;left: 50px;width : 350px;height:90px" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-danger text-white">
+                <i class="fas fa-exclamation-triangle "></i>
+                <strong class="mr-auto">　Warning</strong>
+                <small class="text-light">just now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true" class="text-light">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade bg-dark" style="opacity: .8" id="load" tabindex="-1" role="dialog" aria-labelledby="loadTitle">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loadTitle">
+                            <i class="fas fa-sync-alt fa-spin"></i>　資料查詢中....
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./jquery.js" type="module"></script>
+    </body>
+</html>
