@@ -1,12 +1,37 @@
-# PythonAPI
-Python API connect
+# 蔬菜水果一周走勢圖
 
-文件說明
-使用行政院農委會的蔬菜水果開放資料，條件輸入完即會跑出結果，與JSON格式網址
-https://data.coa.gov.tw/Query/AdvSearch.aspx?id=037
-這邊我都使用高雄以及計算7天的蔬菜稅果價格，然後再算出相較前天的交易量與平均價相差，最後匯出"outprint.json"檔案
 
-使用範例
-		可直接上：https://pythonhomework-1080606.herokuapp.com/#
-不然需使用到Xampp，裡面包含” back.php”,” index.html”,” jquery.js”,” mine.py”,” outprint.json”，丟到伺服器開啟index.html即可。
-到畫面可選擇想觀看的蔬菜水果，按下查詢即可跳出進7天資料。
+
+## 簡介
+
+使用python解析JSON資料，並以圖表方式呈現。
+
+
+
+## 說明
+
+使用行政院農委會的蔬菜水果開放資料，選擇想查看的蔬果，會顯示出7天的蔬菜稅果價格與相較前天的交易量與平均價相差。
+
+
+
+![Screenshot 2022-01-29 161245.jpg](C:\Users\55614\OneDrive\桌面\Screenshot%202022-01-29%20161245.jpg)
+
+## [範例]([Python期末作業-2](https://pythonhomework-1080606.herokuapp.com/#))
+
+
+
+## 使用資源
+
+[行政院農委會的蔬菜水果開放資料](https://data.coa.gov.tw/Query/AdvSearch.aspx?id=037)
+
+[Jquery]([jQuery](https://jquery.com/))
+
+[Bootstrap](https://getbootstrap.com/)
+
+
+
+
+
+
+
+
