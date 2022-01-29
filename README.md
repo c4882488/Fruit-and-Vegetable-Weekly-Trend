@@ -1,37 +1,33 @@
-# 蔬菜水果一周走勢圖
+# Fruit and Vegetable Weekly Trend
 
 
 
-## 簡介
+## Introduction
 
-使用python解析JSON資料，並以圖表方式呈現。
-
-
-
-## 說明
-
-使用行政院農委會的蔬菜水果開放資料，選擇想查看的蔬果，會顯示出7天的蔬菜稅果價格與相較前天的交易量與平均價相差。
+Use python to parse JSON data and present it as a graph.
 
 
 
-![Screenshot 2022-01-29 161245.jpg](C:\Users\55614\OneDrive\桌面\Screenshot%202022-01-29%20161245.jpg)
+## Description
 
-## [範例]([Python期末作業-2](https://pythonhomework-1080606.herokuapp.com/#))
+When you use the vegetable and fruit open information from the Council of Agriculture, Executive Yuan, and select the vegetable and fruit you want to view, it will show you the difference between the price of vegetables and fruits for 7 days, and the volume and average price of transactions compared to the previous day.
+
+<img src="file:///C:/Users/55614/OneDrive/桌面/img1.jpg" title="" alt="Screenshot 2022-01-29 161245.jpg" data-align="center">
 
 
 
-## 使用資源
+## Example
 
-[行政院農委會的蔬菜水果開放資料](https://data.coa.gov.tw/Query/AdvSearch.aspx?id=037)
+ [heroku](https://pythonhomework-1080606.herokuapp.com/#)
 
-[Jquery]([jQuery](https://jquery.com/))
+
+
+## Use of Resources
+
+[Vegetable and fruit opening information from the Council of Agriculture, Executive Yuan](https://data.coa.gov.tw/Query/AdvSearch.aspx?id=037)
+
+[Jquery](https://jquery.com/)
 
 [Bootstrap](https://getbootstrap.com/)
 
-
-
-
-
-
-
-
+---
