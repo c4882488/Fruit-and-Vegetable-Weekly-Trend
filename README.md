@@ -12,8 +12,7 @@ Use python to parse JSON data and present it as a graph.
 
 When you use the vegetable and fruit open information from the Council of Agriculture, Executive Yuan, and select the vegetable and fruit you want to view, it will show you the difference between the price of vegetables and fruits for 7 days, and the volume and average price of transactions compared to the previous day.
 
-<img src="file:///C:/Users/55614/OneDrive/桌面/img1.jpg" title="" alt="Screenshot 2022-01-29 161245.jpg" data-align="center">
-
+<img src="https://s2.loli.net/2022/01/29/R1y64WwBOCGVjs2.jpg" title="" alt="Screenshot 2022-01-29 161245.jpg" data-align="center">
 
 
 ## Example
